@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F64EC871F55150000BD34B2 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64EC861F55150000BD34B2 /* RoundImageView.swift */; };
+		4F64EC891F55170100BD34B2 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64EC881F55170100BD34B2 /* RoundedShadowView.swift */; };
+		4F64EC8B1F5518E600BD34B2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64EC8A1F5518E600BD34B2 /* CircleView.swift */; };
+		4F64EC8D1F58C69A00BD34B2 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64EC8C1F58C69A00BD34B2 /* RoundedShadowButton.swift */; };
 		4FCF21211F4E6EFE00AC709F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF21201F4E6EFE00AC709F /* GradientView.swift */; };
 		4FEA1C291F4BDBA100659F0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEA1C281F4BDBA100659F0C /* AppDelegate.swift */; };
 		4FEA1C2B1F4BDBA100659F0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEA1C2A1F4BDBA100659F0C /* ViewController.swift */; };
@@ -19,6 +23,10 @@
 /* Begin PBXFileReference section */
 		00E83CE3CF2FA4DB3E6CE37E /* Pods-ridrridr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridrridr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ridrridr/Pods-ridrridr.debug.xcconfig"; sourceTree = "<group>"; };
 		086F2802FB3A2B726C576201 /* Pods-ridrridr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ridrridr.release.xcconfig"; path = "Pods/Target Support Files/Pods-ridrridr/Pods-ridrridr.release.xcconfig"; sourceTree = "<group>"; };
+		4F64EC861F55150000BD34B2 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		4F64EC881F55170100BD34B2 /* RoundedShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		4F64EC8A1F5518E600BD34B2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		4F64EC8C1F58C69A00BD34B2 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		4FCF21201F4E6EFE00AC709F /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4FEA1C251F4BDBA100659F0C /* ridrridr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ridrridr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEA1C281F4BDBA100659F0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				4FCF21201F4E6EFE00AC709F /* GradientView.swift */,
+				4F64EC861F55150000BD34B2 /* RoundImageView.swift */,
+				4F64EC881F55170100BD34B2 /* RoundedShadowView.swift */,
+				4F64EC8A1F5518E600BD34B2 /* CircleView.swift */,
+				4F64EC8C1F58C69A00BD34B2 /* RoundedShadowButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -239,7 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F64EC8D1F58C69A00BD34B2 /* RoundedShadowButton.swift in Sources */,
+				4F64EC8B1F5518E600BD34B2 /* CircleView.swift in Sources */,
 				4FEA1C2B1F4BDBA100659F0C /* ViewController.swift in Sources */,
+				4F64EC871F55150000BD34B2 /* RoundImageView.swift in Sources */,
+				4F64EC891F55170100BD34B2 /* RoundedShadowView.swift in Sources */,
 				4FEA1C291F4BDBA100659F0C /* AppDelegate.swift in Sources */,
 				4FCF21211F4E6EFE00AC709F /* GradientView.swift in Sources */,
 			);
