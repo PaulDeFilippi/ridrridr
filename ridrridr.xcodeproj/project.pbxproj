@@ -11,9 +11,12 @@
 		4F64EC891F55170100BD34B2 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64EC881F55170100BD34B2 /* RoundedShadowView.swift */; };
 		4F64EC8B1F5518E600BD34B2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64EC8A1F5518E600BD34B2 /* CircleView.swift */; };
 		4F64EC8D1F58C69A00BD34B2 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64EC8C1F58C69A00BD34B2 /* RoundedShadowButton.swift */; };
+		4F64EC8F1F58FB6D00BD34B2 /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64EC8E1F58FB6D00BD34B2 /* LeftSidePanelVC.swift */; };
+		4F64EC911F58FC3300BD34B2 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64EC901F58FC3300BD34B2 /* ContainerVC.swift */; };
+		4FC90E091F5CE869000CA24D /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC90E081F5CE869000CA24D /* CenterVCDelegate.swift */; };
 		4FCF21211F4E6EFE00AC709F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF21201F4E6EFE00AC709F /* GradientView.swift */; };
 		4FEA1C291F4BDBA100659F0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEA1C281F4BDBA100659F0C /* AppDelegate.swift */; };
-		4FEA1C2B1F4BDBA100659F0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEA1C2A1F4BDBA100659F0C /* ViewController.swift */; };
+		4FEA1C2B1F4BDBA100659F0C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEA1C2A1F4BDBA100659F0C /* HomeVC.swift */; };
 		4FEA1C2E1F4BDBA100659F0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEA1C2C1F4BDBA100659F0C /* Main.storyboard */; };
 		4FEA1C301F4BDBA100659F0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FEA1C2F1F4BDBA100659F0C /* Assets.xcassets */; };
 		4FEA1C331F4BDBA100659F0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FEA1C311F4BDBA100659F0C /* LaunchScreen.storyboard */; };
@@ -27,10 +30,13 @@
 		4F64EC881F55170100BD34B2 /* RoundedShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
 		4F64EC8A1F5518E600BD34B2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		4F64EC8C1F58C69A00BD34B2 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		4F64EC8E1F58FB6D00BD34B2 /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
+		4F64EC901F58FC3300BD34B2 /* ContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
+		4FC90E081F5CE869000CA24D /* CenterVCDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
 		4FCF21201F4E6EFE00AC709F /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4FEA1C251F4BDBA100659F0C /* ridrridr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ridrridr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEA1C281F4BDBA100659F0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4FEA1C2A1F4BDBA100659F0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FEA1C2A1F4BDBA100659F0C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		4FEA1C2D1F4BDBA100659F0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FEA1C2F1F4BDBA100659F0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FEA1C321F4BDBA100659F0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,9 +73,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4FC90E071F5CE840000CA24D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4FC90E081F5CE869000CA24D /* CenterVCDelegate.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		4FCF211D1F4E6E8100AC709F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4FEA1C2A1F4BDBA100659F0C /* HomeVC.swift */,
+				4F64EC8E1F58FB6D00BD34B2 /* LeftSidePanelVC.swift */,
+				4F64EC901F58FC3300BD34B2 /* ContainerVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -114,11 +131,11 @@
 		4FEA1C271F4BDBA100659F0C /* ridrridr */ = {
 			isa = PBXGroup;
 			children = (
+				4FC90E071F5CE840000CA24D /* Protocols */,
 				4FCF211F1F4E6E9A00AC709F /* Model */,
 				4FCF211E1F4E6E8E00AC709F /* View */,
 				4FCF211D1F4E6E8100AC709F /* Controller */,
 				4FEA1C281F4BDBA100659F0C /* AppDelegate.swift */,
-				4FEA1C2A1F4BDBA100659F0C /* ViewController.swift */,
 				4FEA1C2C1F4BDBA100659F0C /* Main.storyboard */,
 				4FEA1C2F1F4BDBA100659F0C /* Assets.xcassets */,
 				4FEA1C311F4BDBA100659F0C /* LaunchScreen.storyboard */,
@@ -251,9 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FC90E091F5CE869000CA24D /* CenterVCDelegate.swift in Sources */,
 				4F64EC8D1F58C69A00BD34B2 /* RoundedShadowButton.swift in Sources */,
+				4F64EC8F1F58FB6D00BD34B2 /* LeftSidePanelVC.swift in Sources */,
 				4F64EC8B1F5518E600BD34B2 /* CircleView.swift in Sources */,
-				4FEA1C2B1F4BDBA100659F0C /* ViewController.swift in Sources */,
+				4F64EC911F58FC3300BD34B2 /* ContainerVC.swift in Sources */,
+				4FEA1C2B1F4BDBA100659F0C /* HomeVC.swift in Sources */,
 				4F64EC871F55150000BD34B2 /* RoundImageView.swift in Sources */,
 				4F64EC891F55170100BD34B2 /* RoundedShadowView.swift in Sources */,
 				4FEA1C291F4BDBA100659F0C /* AppDelegate.swift in Sources */,
