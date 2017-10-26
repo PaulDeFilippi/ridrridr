@@ -101,7 +101,7 @@ extension ContainerVC: CenterVCDelegate {
         sidePanelController.didMove(toParentViewController: self)
     }
     
-    func animateLeftPanel(shouldEpand: Bool) {
+    @objc func animateLeftPanel(shouldEpand: Bool) {
         if shouldEpand {
             isHidden = !isHidden
             animateStatusBar()
