@@ -15,6 +15,8 @@
 		4F64EC911F58FC3300BD34B2 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64EC901F58FC3300BD34B2 /* ContainerVC.swift */; };
 		4F790B681F9EAB8600D01D14 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F790B671F9EAB8600D01D14 /* LoginVC.swift */; };
 		4F790B6A1F9EBCFA00D01D14 /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F790B691F9EBCFA00D01D14 /* RoundedCornerTextField.swift */; };
+		4F8C36A82104F4FD0002B2B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C36A72104F4FD0002B2B3 /* GoogleService-Info.plist */; };
+		4F8C36AB2104FEC90002B2B3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C36AA2104FEC90002B2B3 /* DataService.swift */; };
 		4F9AD10E1F68CA2200C09435 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9AD10D1F68CA2200C09435 /* UIViewExt.swift */; };
 		4FC90E091F5CE869000CA24D /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC90E081F5CE869000CA24D /* CenterVCDelegate.swift */; };
 		4FCF21211F4E6EFE00AC709F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCF21201F4E6EFE00AC709F /* GradientView.swift */; };
@@ -37,6 +39,8 @@
 		4F64EC901F58FC3300BD34B2 /* ContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		4F790B671F9EAB8600D01D14 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4F790B691F9EBCFA00D01D14 /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
+		4F8C36A72104F4FD0002B2B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F8C36AA2104FEC90002B2B3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4F9AD10D1F68CA2200C09435 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		4FC90E081F5CE869000CA24D /* CenterVCDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
 		4FCF21201F4E6EFE00AC709F /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -77,6 +81,14 @@
 				DC41D3EE5AC1C6A732DB50B4 /* Pods_ridrridr.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F8C36A92104FEA10002B2B3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F8C36AA2104FEC90002B2B3 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		4F9AD10C1F68C9F900C09435 /* Extensions */ = {
@@ -147,6 +159,7 @@
 		4FEA1C271F4BDBA100659F0C /* ridrridr */ = {
 			isa = PBXGroup;
 			children = (
+				4F8C36A92104FEA10002B2B3 /* Services */,
 				4F9AD10C1F68C9F900C09435 /* Extensions */,
 				4FC90E071F5CE840000CA24D /* Protocols */,
 				4FCF211F1F4E6E9A00AC709F /* Model */,
@@ -157,6 +170,7 @@
 				4FEA1C2F1F4BDBA100659F0C /* Assets.xcassets */,
 				4FEA1C311F4BDBA100659F0C /* LaunchScreen.storyboard */,
 				4FEA1C341F4BDBA100659F0C /* Info.plist */,
+				4F8C36A72104F4FD0002B2B3 /* GoogleService-Info.plist */,
 			);
 			path = ridrridr;
 			sourceTree = "<group>";
@@ -173,7 +187,6 @@
 				4FEA1C221F4BDBA100659F0C /* Frameworks */,
 				4FEA1C231F4BDBA100659F0C /* Resources */,
 				3274ED65937A838A641A3892 /* [CP] Embed Pods Frameworks */,
-				0265ACB2A6CE19FCDD30916A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,7 +204,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Paul DeFilippi";
 				TargetAttributes = {
 					4FEA1C241F4BDBA100659F0C = {
@@ -226,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FEA1C331F4BDBA100659F0C /* LaunchScreen.storyboard in Resources */,
+				4F8C36A82104F4FD0002B2B3 /* GoogleService-Info.plist in Resources */,
 				4FEA1C301F4BDBA100659F0C /* Assets.xcassets in Resources */,
 				4FEA1C2E1F4BDBA100659F0C /* Main.storyboard in Resources */,
 			);
@@ -234,34 +248,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0265ACB2A6CE19FCDD30916A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ridrridr/Pods-ridrridr-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2C449E8C7DAC022CD4F51270 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ridrridr-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3274ED65937A838A641A3892 /* [CP] Embed Pods Frameworks */ = {
@@ -270,9 +272,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ridrridr/Pods-ridrridr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -287,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FC90E091F5CE869000CA24D /* CenterVCDelegate.swift in Sources */,
+				4F8C36AB2104FEC90002B2B3 /* DataService.swift in Sources */,
 				4F64EC8D1F58C69A00BD34B2 /* RoundedShadowButton.swift in Sources */,
 				4F790B681F9EAB8600D01D14 /* LoginVC.swift in Sources */,
 				4F64EC8F1F58FB6D00BD34B2 /* LeftSidePanelVC.swift in Sources */,
@@ -338,6 +352,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -345,6 +360,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -395,6 +411,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -402,6 +419,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -437,11 +455,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7Q65FMKJ4;
 				INFOPLIST_FILE = ridrridr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Paul-DeFilippi.ridrridr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -453,11 +475,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7Q65FMKJ4;
 				INFOPLIST_FILE = ridrridr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Paul-DeFilippi.ridrridr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};

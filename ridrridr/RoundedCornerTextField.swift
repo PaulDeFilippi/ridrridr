@@ -19,6 +19,7 @@ class RoundedCornerTextField: UITextField {
     func setupView() {
         self.layer.cornerRadius = self.frame.height / 2
         self.layer.borderWidth = 2.0
+        self.layer.borderColor = UIColor.clear.cgColor
     }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {

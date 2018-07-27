@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Menlo.ttc">
-            <string>Menlo-Bold</string>
-            <string>Menlo-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
@@ -108,6 +101,9 @@
                                     <constraint firstAttribute="height" constant="60" id="sZL-Wa-28z"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="centerMapBtn"/>
+                                <connections>
+                                    <action selector="centerMapBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o5j-nf-jnw"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vb3-sg-Qs5" customClass="RoundedShadowView" customModule="ridrridr" customModuleProvider="target">
                                 <rect key="frame" x="20" y="60" width="374" height="81"/>
@@ -300,10 +296,57 @@
                                     <action selector="signUpLoginBtnWasPressed:" destination="8cc-xc-67k" eventType="touchUpInside" id="jYs-uE-Jtg"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g54-7B-b04">
+                                <rect key="frame" x="20" y="486" width="200" height="180"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nKv-6d-4kG">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="53.666666666666664"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-95-Cqt">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchWasToggled:" destination="8cc-xc-67k" eventType="valueChanged" id="JdH-yW-9sG"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PICKUP MODE ENABLED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNq-gm-uUK">
+                                                <rect key="frame" x="0.0" y="36" width="171.66666666666666" height="17.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-photo" translatesAutoresizingMaskIntoConstraints="NO" id="2eQ-e5-EPj" customClass="RoundImageView" customModule="ridrridr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="67.666666666666629" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eWG-4e-rzA"/>
+                                            <constraint firstAttribute="width" constant="50" id="sxi-t8-1fy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email@google.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89c-gZ-A63">
+                                        <rect key="frame" x="0.0" y="132" width="135" height="16.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCOUNT TYPE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykN-Fx-Qm0">
+                                        <rect key="frame" x="0.0" y="162.33333333333337" width="108.66666666666667" height="17.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="AZ8-mE-dqg"/>
+                                    <constraint firstAttribute="width" constant="200" id="dS7-Vz-dta"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="g54-7B-b04" firstAttribute="leading" secondItem="TF4-RI-o0L" secondAttribute="leadingMargin" id="Awu-gv-Wmx"/>
                             <constraint firstItem="VLc-w0-ROo" firstAttribute="top" secondItem="LYj-jE-q41" secondAttribute="bottom" constant="20" id="Cxb-4u-kQm"/>
+                            <constraint firstItem="LYj-jE-q41" firstAttribute="top" secondItem="g54-7B-b04" secondAttribute="bottom" constant="10" id="P2x-Mp-R9b"/>
                             <constraint firstItem="LYj-jE-q41" firstAttribute="leading" secondItem="TF4-RI-o0L" secondAttribute="leadingMargin" id="RKU-6x-D9E"/>
                             <constraint firstItem="Dzz-Dh-MPm" firstAttribute="top" secondItem="TF4-RI-o0L" secondAttribute="top" id="TeM-yD-fKQ"/>
                             <constraint firstItem="inx-0J-8cu" firstAttribute="leading" secondItem="TF4-RI-o0L" secondAttribute="leadingMargin" id="e4g-TH-gYi"/>
@@ -312,6 +355,14 @@
                             <constraint firstAttribute="trailing" secondItem="Dzz-Dh-MPm" secondAttribute="trailing" id="zZM-DY-iPl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginOutButton" destination="LYj-jE-q41" id="tvP-76-jrF"/>
+                        <outlet property="pickupModeLabel" destination="PNq-gm-uUK" id="9sG-Sx-a9g"/>
+                        <outlet property="pickupModeSwitch" destination="bbi-95-Cqt" id="rZr-Og-K5G"/>
+                        <outlet property="userAccountTypeLabel" destination="ykN-Fx-Qm0" id="Sg5-m2-IlB"/>
+                        <outlet property="userEmailLabel" destination="89c-gZ-A63" id="wF4-n7-hnr"/>
+                        <outlet property="userImageView" destination="2eQ-e5-EPj" id="teh-ed-ly5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xn7-wR-WXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -350,13 +401,13 @@
                                             </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eHz-4F-bV4">
-                                            <rect key="frame" x="17" y="190" width="380" height="356"/>
+                                            <rect key="frame" x="27" y="190" width="360" height="356"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y5w-oa-e8h">
-                                                    <rect key="frame" x="0.0" y="0.0" width="380" height="136"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="360" height="136"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DC4-5N-Ir6">
-                                                            <rect key="frame" x="74.333333333333329" y="0.0" width="231.33333333333337" height="56"/>
+                                                            <rect key="frame" x="64.333333333333329" y="0.0" width="231.33333333333337" height="56"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RIDR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOJ-Wx-QGT">
                                                                     <rect key="frame" x="0.0" y="0.0" width="115.66666666666667" height="56"/>
@@ -373,9 +424,9 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up or login to start requesting rides with RIDRRIDR: the easiest way to get from point A to point B!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XO8-78-fRb">
-                                                            <rect key="frame" x="0.0" y="56" width="380" height="80"/>
+                                                            <rect key="frame" x="0.0" y="56" width="360" height="80"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="380" id="5WX-hT-uCv"/>
+                                                                <constraint firstAttribute="width" constant="360" id="5WX-hT-uCv"/>
                                                                 <constraint firstAttribute="height" constant="80" id="Whv-MI-nGd"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
@@ -384,11 +435,11 @@
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="380" id="7Vb-7N-KGs"/>
+                                                        <constraint firstAttribute="width" constant="360" id="7Vb-7N-KGs"/>
                                                     </constraints>
                                                 </stackView>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DT4-ug-yte">
-                                                    <rect key="frame" x="0.0" y="156" width="380" height="41"/>
+                                                    <rect key="frame" x="0.0" y="156" width="360" height="41"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="0uU-E8-Ui6"/>
                                                     </constraints>
@@ -398,21 +449,21 @@
                                                     </segments>
                                                     <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </segmentedControl>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rf1-if-se4" customClass="RoundedCornerTextField" customModule="ridrridr" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="216" width="380" height="60"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rf1-if-se4" customClass="RoundedCornerTextField" customModule="ridrridr" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="216" width="360" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="ud8-8Q-qhf"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3kg-lK-nkI" customClass="RoundedCornerTextField" customModule="ridrridr" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="296" width="380" height="60"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3kg-lK-nkI" customClass="RoundedCornerTextField" customModule="ridrridr" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="296" width="360" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="TWc-bk-3cf"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
                                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
@@ -428,6 +479,9 @@
                                             <state key="normal" title="SIGN UP / LOGIN">
                                                 <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="authButtonPressed:" destination="UdK-b0-jLT" eventType="touchUpInside" id="h0H-nt-JLk"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -455,6 +509,12 @@
                             <constraint firstItem="Q9X-qz-65F" firstAttribute="leading" secondItem="fIk-q2-Hmt" secondAttribute="leading" id="d3f-ki-ADc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authButton" destination="FNu-lt-Dj0" id="yUq-P1-HOG"/>
+                        <outlet property="emailField" destination="Rf1-if-se4" id="S7r-Me-X9Z"/>
+                        <outlet property="passwordField" destination="3kg-lK-nkI" id="g7W-xQ-iNH"/>
+                        <outlet property="segmentedControl" destination="DT4-ug-yte" id="UWC-VE-Sh4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ztt-15-apb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
